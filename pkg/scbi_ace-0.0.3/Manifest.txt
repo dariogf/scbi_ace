@@ -1,0 +1,12 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/scbi_ace.rb
+script/console
+script/destroy
+script/generate
+test/test_helper.rb
+test/test_scbi_ace.rb
+lib/scbi_ace/indexed_ace_file.rb
