@@ -69,6 +69,7 @@ class IndexedAceFile
 			 
 			#(ace_file=File.open(@ace_file_name)).each_line	do |line|
 			(ace_file=File.open(@ace_file_name)).grep(/^\s*CO\s/) do |line|
+			  puts ace_file.pos, line.length
 				end_pos = ace_file.pos - line.length
 				  
         #puts line
@@ -79,7 +80,7 @@ class IndexedAceFile
 							
 							@index_file.puts "#{contig}\t#{start_pos}\t#{end_pos-start_pos}"
 							
-							#puts "#{contig}\t#{from}\t#{offset}"
+              # puts "#{contig}\t#{start_pos}\t#{offset}"
 							
 							
 					end
@@ -96,7 +97,8 @@ class IndexedAceFile
 			
 			if contig
 							end_pos = ace_file.pos
-							@index_file.puts "#{contig}\t#{start_pos}\t#{end_pos-start_pos}"							
+							@index_file.puts "#{contig}\t#{start_pos}\t#{end_pos-start_pos}"
+							puts "#{contig}\t#{start_pos}\t#{end_pos-start_pos}"
 			end
 			
 			@index_file.close

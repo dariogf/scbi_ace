@@ -1,14 +1,16 @@
 = scbi_ace
 
-* http://github.com/#{github_username}/#{project_name}
+* http://www.scbi.uma.es/downloads
 
 == DESCRIPTION:
 
-FIX (describe your package)
+scbi_ace is a ruby gem to handle ACE files containing contigs
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Indexes large ace files to provide fast random access to individual contigs
+* Parses the text representation in ACE format to Contigs and Reads objects
+* Generates the text representation 
 
 == SYNOPSIS:
 
@@ -20,13 +22,13 @@ FIX (describe your package)
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* gem install scbi_ace
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2010 Dario Guerrero
+Copyright (c) 2010 Noe Fernandez & Dario Guerrero
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
